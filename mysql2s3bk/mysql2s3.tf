@@ -3,7 +3,7 @@ resource "helm_release" "mysql2s3_backup" {
   repository   = "https://charts.mgou.dev"
   chart        = "mysql2s3bk"
   version      = var.mysql2s3_backup_version
-  namespace    = "cronjobs"
+  namespace    = var.mysql2s3_backup_namespace
   force_update = true
   create_namespace = true
 

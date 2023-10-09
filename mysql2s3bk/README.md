@@ -13,5 +13,6 @@ module "mysql2s3" {
   mysql2s3_backup_suspent_enabled="true"
   mysql2s3_backup_name="mydb-backup"
   mysql2s3_backup_version="0.1.0"
+  mysql2s3_backup_namespace="cronjob"
 }
 ```

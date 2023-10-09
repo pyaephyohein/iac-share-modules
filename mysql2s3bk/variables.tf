@@ -41,3 +41,6 @@ variable "mysql2s3_backup_aws_region" {
   description = "aws region to access dest bucket"
 }
 
+variable "mysql2s3_backup_namespace" {
+  description = "cronjob's namespace"
+}

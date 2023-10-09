@@ -8,7 +8,7 @@ resource "helm_release" "mysql2s3_backup" {
   create_namespace = true
 
   values = [
-    templatefile("./templates/values-mysql2s3bk.yaml.tpl",local.mysql2s3_env)
+    templatefile("${path.module}/templates/values-mysql2s3bk.yaml.tpl",local.mysql2s3_env)
   ]
 }
 
